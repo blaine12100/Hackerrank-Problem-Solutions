@@ -1,0 +1,10 @@
+/*In this question,we hvae to query the sum of population where the district is equal to califronia.
+for this,we need the sum function in SQL which accepts a single numerical column as it's parameter 
+and we need to add a where clause where the distric is equal to the value of california*/
+
+/*
+Enter your query here.
+Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
+*/
+
+select sum(population) from city where district = "california";

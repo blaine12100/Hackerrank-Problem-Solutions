@@ -1,0 +1,11 @@
+Query the average population for all cities in CITY, rounded down to the nearest integer.
+
+/*
+Enter your query here.
+Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
+*/
+
+select round(avg(population),2) from city;
+
+/*We can alse do this without the round.But the round works better
+as we can specify the no of digits we want to round off*/

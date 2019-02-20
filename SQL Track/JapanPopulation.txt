@@ -1,0 +1,12 @@
+Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
+
+/*In this question,we need to query the sum for only a given set of cities.In this case
+we will use the where clasuse to specify a condition based on which we need to limit our query.
+We will use the country code JPN to limit our query to get the sum for cities only in Japan*/
+
+/*
+Enter your query here.
+Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
+*/
+
+select sum(population) from city where countrycode="JPN";
