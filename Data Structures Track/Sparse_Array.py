@@ -3,7 +3,7 @@ main input.If you try to do this in terms of arrays or something,the solution wi
 messy.One of the efficient solutions is to use a Python Dictionary and a List Comprehension'''
 
 
-#!/bin/python3
+# !/bin/python3
 
 import math
 import os

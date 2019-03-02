@@ -2,7 +2,7 @@
 We are using the adapter patten which uses functions of a differnt class
 to map to operations in out stack.Like when we do push an element into the stack,what we
 can do in pythin is call the append method since it appends the value to the end of the list.
-Simillarly we can use the pop method to delete an elemen from the top of the stack.
+Simillarly we can use the pop method to delete an element from the top of the stack.
 '''
 
 class LIFOStack():
