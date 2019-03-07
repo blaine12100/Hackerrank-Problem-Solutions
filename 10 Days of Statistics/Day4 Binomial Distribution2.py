@@ -17,13 +17,8 @@ from 2 to 10 sum binomial distrobution
 '''
 import math
 
-# casesval = 6
-
 probabilitySUccess = 0.12
 probabilityFailure = 1-probabilitySUccess
-
-# value_of_x = 3
-
 
 def cases(n, x):
     main_factorials = math.factorial(
