@@ -8,13 +8,13 @@ import sys
 
 # Complete the repeatedString function below.
 def repeatedString(s, n):
-    init_a_count=s.count('a')
+    init_a_count = s.count('a')
 
-    len_string=len(s)
+    len_string = len(s)
 
-    no_of_strings_appended=n//len_string
+    no_of_strings_appended = n//len_string
 
-    substring_a_count=s[:n%len_string].count('a')
+    substring_a_count = s[:n%len_string].count('a')
     
     return (init_a_count)*(no_of_strings_appended)+substring_a_count
 
