@@ -1,13 +1,13 @@
-'''The calender.day_name returns an array of names in a week as set by locale.
+"""The calender.day_name returns an array of names in a week as set by locale.
 This approach will not work if we manually set the first day of the week anything
 apart from a monday as currently we are doing it based on the index value.The if elif
-approach would also need to be changed in that case.'''
+approach would also need to be changed in that case."""
 
 import calendar
 
-month,day,year=map(int,input().split())
+month, day, year = map(int, input().split())
 
-day_of_week=calendar.weekday(year,month,day)
+day_of_week = calendar.weekday(year, month, day)
 
 # print(list(calendar.day_name))
 print(calendar.day_name[day_of_week].upper())
