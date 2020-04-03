@@ -12,29 +12,32 @@ large_list = [1,2,3,4,5,6,7,8,9,10, 11, 12 ,13, 14, .................., 98]
 output = [[1,2,3,4,5,6],[7,8,9,10,11,12],...[97,98]
 """
 
-# main_list = list(range(99))
+main_list = list(range(99))
 
-# split_list = int(input())
+split_list = int(input())
 
 # My Solution
 
-# new_list=[]
+new_list = []
 
-# index=split_list
+index = split_list
 
-# prev_index=0
+prev_index = 0
 
-# for item in range(1,len(main_list)):
-#   new_list.append(main_list[prev_index:index])
-#   prev_index+=split_list
-#   index+=split_list
+for item in range(1, len(main_list)):
+    new_list.append(main_list[prev_index:index])
+    prev_index += split_list
+    index += split_list
 
-#   if index>len(main_list):
-#     new_list.append(main_list[prev_index:])
-#     break
+    if index > len(main_list):
+        new_list.append(main_list[prev_index:])
+        break
 
-# print(new_list)
+print(new_list)
 
+# Latest Solution(Why Did not think of this yesterday)
+new_list = [main_list[item : item + split_list] for item in main_list[::split_list]]
+print(new_list)
 #######################
 
 # https://www.geeksforgeeks.org/break-list-chunks-size-n-python/
@@ -68,9 +71,9 @@ The last slice will contain all the left over elements which do not confirm to t
 # Unsigned to Signed Integer convversion
 # (https://stackoverflow.com/questions/385572/typecasting-in-python)
 
-take_input = int(input())
+# take_input = int(input())
 
-s8 = (take_input + 2 ** 7) % 2 ** 8 - 2 ** 7
-unsigned_op = take_input % 2 ** 8
+# s8 = (take_input + 2 ** 7) % 2 ** 8 - 2 ** 7
+# unsigned_op = take_input % 2 ** 8
 
-print(unsigned_op)
+# print(unsigned_op)
