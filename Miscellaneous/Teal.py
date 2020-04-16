@@ -16,7 +16,7 @@ main_list = list(range(99))
 
 split_list = int(input())
 
-# My Solution
+# My Solutions
 
 new_list = []
 
