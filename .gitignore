@@ -1,2 +1,7 @@
 .mypy_cache
 .vscode
+*.csv
+*.pyc
+*.jpg
+*.txt
+*.sqlite3
