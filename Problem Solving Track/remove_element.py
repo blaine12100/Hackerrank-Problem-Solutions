@@ -5,6 +5,7 @@ class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         initial_length = 0
         for item in range(len(nums)):
+            # Non Simillar Element then we copy that element appropriately.
             if nums[item] != val:
                 nums[initial_length] = nums[item]
                 initial_length += 1

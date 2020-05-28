@@ -14,7 +14,7 @@ class Solution:
         edited_index = 1
 
         while initial_index < len(nums):
-            # If element is not the same then we stap the element and keep a count of the
+            # If element is not the same then we swap the element and keep a count of the
             # of the no of times we have changed the element and so we are getting the
             # first iteration of the unique element in front which leads us to having all initial
             # elements in sequence as needed.
