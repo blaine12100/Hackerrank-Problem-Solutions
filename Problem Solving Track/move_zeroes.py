@@ -7,24 +7,22 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
 
-        # Find All Index where we have zero present and then create a new array and add to existing arr
-        # We cannot make a copy of the initial array but we can create a new one :-'
-        zero_index_arr = []
+        # This Algorithm Works For Around 80% of Cases but for casses when
+        # we do have a number in middle or a number at the end and all zeroes
+        # then in that case swapping directly will not work
 
-        for item in range(len(nums)):
-            if nums[item] == 0:
-                zero_index_arr.append(item)
+        # for item in range(len(nums)):
+        #     if nums[item] == 0:
+        #         for item2 in range(item + 1, len(nums)):
+        #             nums[item2 - 1], nums[item2] = nums[item2], nums[item2 - 1]
 
-        for item in zero_index_arr:
-            del nums[item]
-
-        nums.extend([0] * len(zero_index_arr))
+        zero_count = nums.count(0)
+        nums = [x for x in nums if x != 0]
+        nums.extend([0] * zero_count)
         print(nums)
-        return nums
 
 
 # Driver Code
 new_op = Solution()
 list_input = list(map(int, input().split()))
-new_op_2 = new_op.moveZeroes(list_input)
-print(new_op_2)
+new_op.moveZeroes(list_input)
