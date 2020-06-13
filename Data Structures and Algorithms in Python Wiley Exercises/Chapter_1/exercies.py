@@ -59,11 +59,43 @@ def sum_squares_naive(n):
     return square_sum
 
 
+def sum_squares_comprehension(n):
+
+    """
+    In this,we need to calculate the sum of squares for all integers less than N using list
+    comprehension and sum function
+    """
+
+    return sum([x ** 2 for x in range(n)])
+
+
+def sum_squares_odd_naive(n):
+
+    """
+    In this,we need to calculate the sum of squares for all odd integers less than N using list
+    comprehension and sum function
+    """
+
+    square_sum = 0
+    for item in range(1, n, 2):
+        square_sum += pow(item, 2)
+    return square_sum
+
+def sum_squares_odd(n):
+
+    """
+    In this,we need to calculate the sum of squares for all odd integers less than N using list
+    comprehension and sum function
+    """
+
+    return sum(x ** 2 for x in range(1, n, 2))
+
+
 # a, b = input().split()
 # print(a, b)
 # op = is_multiple(a, b)
 # print(op)
 
 # list_numbers = [100, -401, 2, 20, 100, -1, 0.33, 101.234]
-op = sum_squares_naive(int(input()))
+op = sum_squares_odd(int(input()))
 print(op)
